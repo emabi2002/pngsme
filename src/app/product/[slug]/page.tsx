@@ -13,8 +13,11 @@ import Link from 'next/link';
 export default async function ProductDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
+  // Await params in Next.js 15
+  const { slug } = await params;
+
   const supabase = await createClient();
 
   // Get product with all related data
@@ -27,7 +30,7 @@ export default async function ProductDetailPage({
       images:product_images(*),
       variants:product_variants(*)
     `)
-    .eq('slug', params.slug)
+    .eq('slug', slug)
     .eq('active', true)
     .single();
 
