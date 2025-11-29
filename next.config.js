@@ -8,6 +8,7 @@ const nextConfig = {
       "images.unsplash.com",
       "ext.same-assets.com",
       "ugc.same-assets.com",
+      "ksyygnnyhdzficipkgqi.supabase.co",
     ],
     remotePatterns: [
       {
@@ -30,7 +31,19 @@ const nextConfig = {
         hostname: "ugc.same-assets.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "ksyygnnyhdzficipkgqi.supabase.co",
+        pathname: "/storage/v1/object/public/**",
+      },
     ],
+  },
+  // Required for Netlify deployment
+  eslint: {
+    ignoreDuringBuilds: false,
+  },
+  typescript: {
+    ignoreBuildErrors: false,
   },
 };
 
