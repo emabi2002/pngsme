@@ -63,7 +63,7 @@ export default async function MarketplacePage({
             <div className="flex items-center justify-between mb-6">
               <div>
                 <h2 className="text-2xl font-bold">
-                  {searchParams.search ? `Results for "${searchParams.search}"` : 'All Products'}
+                  {params.search ? `Results for "${params.search}"` : 'All Products'}
                 </h2>
                 <p className="text-muted-foreground">
                   Showing {products.length} {products.length === 1 ? 'product' : 'products'}
