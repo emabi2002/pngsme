@@ -1,0 +1,12 @@
+LOGO PLACEHOLDER INSTRUCTIONS
+==============================
+
+To see the PNG SME Market logo with the bird of paradise design:
+
+1. Save the logo image (the one with colorful bird of paradise) as "logo.png" in this folder
+2. The logo should show the red, yellow, green, and blue flower/bird design
+3. Once saved, it will automatically appear throughout the website
+
+Until then, a fallback will be shown.
+
+Recommended: Use a PNG file with transparent background, minimum 400x400px

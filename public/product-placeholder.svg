@@ -1,0 +1,16 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Product Placeholder -->
+  <rect width="400" height="400" fill="#f5f5f5"/>
+
+  <!-- Box icon -->
+  <g transform="translate(200, 200)">
+    <!-- Box shape -->
+    <rect x="-60" y="-40" width="120" height="80" fill="#e0e0e0" stroke="#bdbdbd" stroke-width="2"/>
+    <path d="M -60,-40 L 0,-70 L 60,-40" fill="#d0d0d0" stroke="#bdbdbd" stroke-width="2"/>
+    <path d="M 60,-40 L 60,40 L 0,70 L 0,-70 Z" fill="#c0c0c0" stroke="#bdbdbd" stroke-width="2"/>
+
+    <!-- PNG text -->
+    <text x="0" y="10" font-size="24" font-weight="bold" text-anchor="middle" fill="#757575">PNG</text>
+    <text x="0" y="35" font-size="12" text-anchor="middle" fill="#9e9e9e">Product</text>
+  </g>
+</svg>
