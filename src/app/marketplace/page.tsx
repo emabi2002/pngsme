@@ -16,9 +16,12 @@ interface SearchParams {
 export default async function MarketplacePage({
   searchParams,
 }: {
-  searchParams: SearchParams;
+  searchParams: Promise<SearchParams>;
 }) {
-  const page = parseInt(searchParams.page || '1');
+  // Await searchParams in Next.js 15
+  const params = await searchParams;
+
+  const page = parseInt(params.page || '1');
   const limit = 12;
   const offset = (page - 1) * limit;
 
@@ -27,8 +30,8 @@ export default async function MarketplacePage({
     getProducts({
       limit,
       offset,
-      search: searchParams.search,
-      category: searchParams.category,
+      search: params.search,
+      category: params.category,
     }),
     getCategories(),
   ]);
